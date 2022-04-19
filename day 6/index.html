@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myntra Page Using Flex + Position</title>
+</head>
+<style>
+
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .card {
+        width: 300px;
+        
+    }
+
+    .card-img {
+        width: 100%;
+    }
+
+    .footer {
+        border-top: 1px solid black;
+    }
+
+    h3,
+    p {
+        margin: 5px 0px;
+    }
+
+    .box-img {
+        width: 100%;
+    }
+</style>
+<style>
+
+    .container{
+        width: 85%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+
+
+    }
+    .card{
+        margin-bottom: 25px;   
+        width: 30%;
+    }
+    .box-img{
+        position: relative;
+    
+      
+    }
+
+    .box-img>p{
+        bottom: 15px;
+        position: absolute;
+        background-color: rgb(172, 215, 205);
+        width: 27%;
+        height: 26px;
+       padding: 6px;
+       font-weight: bold;
+       font-size: 15px;
+        font-family: sans-serif;
+        margin-left: 5px;
+    }
+    #offer{
+        bottom: 15px;
+        right: 50px;
+        background-color: rgb(172, 215, 205);
+        width: 14.5%;
+        height: 26px;
+       padding: 3px;
+       font-weight: bold;
+       font-size: 15px;
+        border-radius: 1px;
+       
+        
+    }
+    h3{
+        font-size: 23px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top:8px;
+        margin-left: 6px;
+
+    }
+    h3+p{
+        font-family: sans-serif;
+        color: gray;
+        font-size: 18px;
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+    p+h2{
+        font-size: 19px;
+        font-family: sans-serif;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-left: 6px;
+    }
+    del{
+        color: gray;
+        font-weight: 400;
+    }
+    span{
+        color: rgb(233, 25, 59);
+        font-weight: 150;
+        font-size: 18px;
+    }
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" >
+            <div class="box-img">
+                <img src="https://assets.myntassets.com/h_1440,q_90,w_1080/v1/assets/images/10106295/2020/6/9/588a37df-5674-49f5-8c02-8f6fa3a021d61591680988077-HRX-by-Hrithik-Roshan-Men-Orange-Printed-Regular-Fit-Running-1.jpg"
+                    alt="" class="card-img">
+                <p>BESTSELLER</p>
+                <p id="offer">OFFER</p>
+            </div>
+            <h3 class="card-heading">HRX by Hrithik Roshan</h3>
+            <p class="card-text">Men Teal Blue Printed Pure Cotton T-shirt. </p>
+            <h2> Rs. 244 <del>Rs. 699</del> <span> (65% OFF)  </span> </h2>
+        </div>
+
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/2284691/2018/1/29/11517205743041-Roadster-Men-Black-Regular-Fit-Solid-Casual-Shirt-2871517205742822-1.jpg"
+                    alt="" class="card-img">
+                    <p>BESTSELLER</p>
+                    <p  id="offer">OFFER</p>
+            </div>
+            <h3 class="card-heading">Roadster</h3>
+            <p class="card-text">Men Black Twill Casual Shirt </p>
+            <h2> Rs. 499 <del>Rs. 899</del> <span> (50% OFF)  </span> </h2>
+        </div>
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/1700830/2019/4/8/3f06fe25-1ce2-4e1e-88e9-7a9d26b4f0bf1554699735416-WROGN-Men-Rust-Red-High-Density-Print-Round-Neck-T-shirt-961-1.jpg"
+                    alt="" class="card-img">
+                    <p>BESTSELLER</p>
+                    <p  id="offer" >OFFER</p>
+            </div>
+            <h3 class="card-heading">WROGN</h3>
+            <p class="card-text">Men Rust Red Graphic Printed Cotton T-shirt </p>
+            <h2> Rs. 350 <del>Rs. 699</del> <span> (50% OFF)  </span> </h2>
+        </div>
+
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://assets.myntassets.com/f_webp,dpr_1.5,q_60,w_210,c_limit,fl_progressive/assets/images/11056866/2022/3/30/dfdc555d-fd69-4c7f-bf76-c0a678fe72f21648618004857-ZIYAA-Floral-Leafy-Foil-Print-Kurta-Set-4351648618004327-1.jpg"
+                    alt="" class="card-img">
+                    <p>BESTSELLER</p>
+                    <p  id="offer" >OFFER</p>
+            </div>
+            <h3 class="card-heading">ZIYAA</h3>
+            <p class="card-text">Floral Leafy Foil Print Kurta Set </p>
+            <h2> Rs.2999 <del>Rs. 5999</del> <span> (50% OFF)  </span> </h2>
+        </div>
+
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/14323730/2021/8/3/3d38e60a-b4a5-408d-9b18-a883847065101627971486621IndoEraGreenSolidStraightKurtaTrouserWithDupattaSets1.jpg"
+                    alt="" class="card-img">
+                    <p>BESTSELLER</p>
+                    <p  id="offer" >OFFER</p>
+            </div>
+            <h3 class="card-heading">Indo Era</h3>
+            <p class="card-text">Women Green & Golden Yoke Design Kurta with Trousers & With Dupatta</p>
+            <h2> Rs.1999 <del>Rs. 4999</del> <span> (60% OFF)  </span> </h2>
+        </div>
+
+
+        <div class="card">
+            <div class="box-img">
+                <img src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/13962282/2021/7/5/26f8c8a9-e900-4510-9fb0-ac42f029442c1625483017312-Indo-Era-Beigh-Embroidered-Straight-Kurta-Palazzo-With-Dupat-1.jpg"
+                    alt="" class="card-img">
+                    <p>BESTSELLER</p>
+                    <p  id="offer" >OFFER</p>
+            </div>
+            <h3 class="card-heading">Indo Era</h3>
+            <p class="card-text">Beige & Maroon Zari Embroidered Straight Kurta Palazzo With Dupatta Set </p>
+            <h2> Rs. 1999 <del>Rs. 4999</del> <span> (60% OFF)  </span> </h2>
+        </div>
+
+    </div>
+</body>
+
+</html>
